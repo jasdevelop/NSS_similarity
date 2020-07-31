@@ -1,0 +1,16 @@
+samp_freq	500	# sampling frequency , unit: hertz
+points_t	20	# integer, number of points on time axis  , units: dimensionless
+sigma_t		0.02625	# double , standard deviation of the kernel, units: seconds 
+window_stride	1   	# integer, number of points to shift the window , unit: dimensionless
+sigma_xy	23.0	# double , standard deviation of kernel in xy plane, units: same as x (e.g. pixels )
+kernel_size_t	6.0	# double, width of the kernel in t: unit: sigma_t
+kernel_size_xy	6.0	# double, width of the kernel in xy, unit: sigma_xy
+space_xy	1.0	# double , spacing between points in x and in y axis
+start_x		0.0	# double, starting point of the x axis 
+end_x		720	# double , ending point for x axis
+start_y		0.0	# double, starting point of the y axis 
+end_y		576	# double , ending point for y axis
+export          1       # integer, 0 or 1, enables the NSS export 
+mode		2	# can take the integer values: { grid: 1 , exact: 2, approx: 3 }
+planar		0	#  0 or 1 to activate. It only calculates NSS for one plane of the window
+mc_iters	1	# Number of monte Carlo iterations. Activated for values >=1

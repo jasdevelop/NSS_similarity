@@ -1,0 +1,28 @@
+
+The main code was compiled using GNU fortran 2008.
+The Intel MKL library is required.
+
+The NetBeans IDE graphical interface was used for the present project, although not required. 
+
+
+Compiler options:
+
+-fdefault-integer-8 -m64 -I/opt/intel/mkl/include -I/opt/intel/mkl/include/fftw -g -fno-range-check
+
+Linker options:
+
+-Wl,--start-group /opt/intel/mkl/lib/intel64/libmkl_gf_ilp64.a /opt/intel/mkl/lib/intel64/libmkl_sequential.a /opt/intel/mkl/lib/intel64/libmkl_core.a -Wl,--end-group -lpthread -lm -ldl
+
+
+Helpful resources:
+
+-For assistance on the commands for compiling and linking the code see 
+ https://software.intel.com/en-us/articles/intel-mkl-link-line-advisor/
+
+ 
+-For more on using FFTW with MKL see 
+ https://software.intel.com/en-us/mkl-developer-reference-fortran-running-fftw3-interface-wrapper-examples
+ 
+ 
+ 
+
