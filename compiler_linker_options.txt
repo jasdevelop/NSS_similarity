@@ -5,6 +5,17 @@ The Intel MKL library is required.
 The NetBeans IDE graphical interface was used for the present project, although not required. 
 
 
+Build order of the modules:
+
+d_mcarlo.f08   (Contains the random number generator routines)
+fft_convolve_3d.f08  (Contains the grid calculation)
+input_module.f08     (Routines that process the input files)
+link_gaze_grid.f08  (Interfaces the main and grid calculation module )
+lm_exact.f08    (Contains the routines for the analytical calculations)
+main.f08  
+
+
+
 Compiler options:
 
 -fdefault-integer-8 -m64 -I/opt/intel/mkl/include -I/opt/intel/mkl/include/fftw -g -fno-range-check
